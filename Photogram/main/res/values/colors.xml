@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FE6B2D</color>
+    <color name="colorPrimaryDark">#CC5A27</color>
+    <color name="colorAccent">#FE6B2D</color>
+    <color name="selected_filter">#221f20</color>
+    <color name="normal_filter">#8a8889</color>
+    <color name="color_option_menu">#FF3990</color>
+    <color name="card_back_color">#333639</color>
+    <color name="card_back_color_clicked">#5f5f60</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Fragments.AddTextFragment">
+
+    <EditText
+        android:id="@+id/edt_add_text"
+        android:scrollbars="vertical"
+        android:hint="Enter your text..."
+        android:textColorHint="#75fe6b2d"
+        android:maxHeight="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextColor"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_font"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_color"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btn_done"
+        android:text="DONE"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:fButtonColor="@color/colorPrimary"
+        app:shadowColor="#f9be8a"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="8dp"
+        />
+
+</LinearLayout>

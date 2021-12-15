@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Fragments.BrushFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Brush Size"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekBar_brush_size"
+            android:min="1"
+            android:max="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/SeekBarColor"/>
+
+        <TextView
+            android:text="Opacity"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekBar_brush_opacity"
+            android:min="1"
+            android:max="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/SeekBarColor"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_color"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="Eraser"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:layout_gravity=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <co.ceryle.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/segmentedButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:sbg_animateSelector="bounce"
+            app:sbg_animateSelectorDuration="500"
+            app:sbg_backgroundColor="#ffffff"
+            app:sbg_dividerColor="@color/colorPrimary"
+            app:sbg_dividerPadding="10dp"
+            app:sbg_dividerSize="1dp"
+            app:sbg_position="1"
+            app:sbg_radius="2dp"
+            app:sbg_ripple="true"
+            app:sbg_rippleColor="@color/colorPrimary"
+            app:sbg_selectorColor="@color/colorPrimary"
+            app:sbg_selectorTextColor="#ffffff"
+            app:sbg_shadow="true"
+            app:sbg_shadowElevation="3dp"
+            app:sbg_shadowMargin="4dp">
+
+            <Button
+                android:id="@+id/btnON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ON"
+                android:textAllCaps="true"
+                android:minHeight="10dp"/>
+
+            <Button
+                android:id="@+id/btnOFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:textAllCaps="true"
+                android:minHeight="10dp"/>
+
+        </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>
